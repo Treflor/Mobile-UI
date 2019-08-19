@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_ui/screens/home_screen.dart';
+import 'screens/main_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         brightness: Brightness.dark,
       ),
-      home: HomeScreen(),
+      home: MainScreen(),
     );
   }
 }
