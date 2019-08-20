@@ -37,25 +37,40 @@ class _MainScreenState extends State<MainScreen> {
         type: BottomNavigationBarType.shifting,
         items: [
           BottomNavigationBarItem(
-              title: Text('Home'),
-              icon: Icon(Icons.home),
-              backgroundColor: Colors.blueGrey),
+              title: Text(
+                'Home',
+                style: TextStyle(color: Color.fromRGBO(130, 199, 165, 1)),
+              ),
+              icon: Icon(Icons.home, color: Color.fromRGBO(130, 199, 165, 1),),
+              backgroundColor: Color.fromRGBO(13, 71, 161, 0.6)),
           BottomNavigationBarItem(
-              title: Text('Start'),
-              icon: Icon(Icons.add),
-              backgroundColor: Colors.amberAccent),
+              title: Text(
+                'Start',
+                style: TextStyle(color: Color.fromRGBO(130, 199, 165, 1)),
+              ),
+              icon: Icon(Icons.add, color: Color.fromRGBO(130, 199, 165, 1),),
+              backgroundColor: Color.fromRGBO(13, 71, 161, 0.6)),
           BottomNavigationBarItem(
-              title: Text('Camera'),
-              icon: Icon(Icons.camera),
-              backgroundColor: Colors.greenAccent),
+              title: Text(
+                'Camera',
+                style: TextStyle(color: Color.fromRGBO(130, 199, 165, 1)),
+              ),
+              icon: Icon(Icons.camera, color: Color.fromRGBO(130, 199, 165, 1),),
+              backgroundColor: Color.fromRGBO(13, 71, 161, 0.6)),
           BottomNavigationBarItem(
-              title: Text('Routes'),
-              icon: Icon(Icons.navigation),
-              backgroundColor: Colors.cyanAccent),
+              title: Text(
+                'Routes',
+                style: TextStyle(color: Color.fromRGBO(130, 199, 165, 1)),
+              ),
+              icon: Icon(Icons.navigation, color: Color.fromRGBO(130, 199, 165, 1),),
+              backgroundColor: Color.fromRGBO(13, 71, 161, 0.6)),
           BottomNavigationBarItem(
-              title: Text('Settings'),
-              icon: Icon(Icons.settings),
-              backgroundColor: Colors.redAccent),
+              title: Text(
+                'Settings',
+                style: TextStyle(color: Color.fromRGBO(130, 199, 165, 1)),
+              ),
+              icon: Icon(Icons.settings, color: Color.fromRGBO(130, 199, 165, 1),),
+              backgroundColor: Color.fromRGBO(13, 71, 161, 0.6)),
         ],
       ),
     );

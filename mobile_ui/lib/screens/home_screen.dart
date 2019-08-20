@@ -14,15 +14,19 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Treflor'),
+        title: Text(
+          'TREFLOR',
+          style: TextStyle(color: Color.fromRGBO(130, 199, 165, 1)),
+        ),
+        backgroundColor: Color.fromRGBO(13, 71, 161, 0.6),
         actions: <Widget>[
           IconButton(
             onPressed: () => null,
-            icon: Icon(Icons.search),
+            icon: Icon(Icons.search, color: Color.fromRGBO(130, 199, 165, 1),),
           ),
           IconButton(
             onPressed: () => null,
-            icon: Icon(Icons.account_circle),
+            icon: Icon(Icons.account_circle, color: Color.fromRGBO(130, 199, 165, 1),),
           ),
         ],
       ),
