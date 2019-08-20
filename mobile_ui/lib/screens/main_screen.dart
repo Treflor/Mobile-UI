@@ -37,9 +37,9 @@ class _MainScreenState extends State<MainScreen> {
         type: BottomNavigationBarType.shifting,
         items: [
           BottomNavigationBarItem(
-              title: Text('home'),
+              title: Text('Home'),
               icon: Icon(Icons.home),
-              backgroundColor: Colors.blueAccent),
+              backgroundColor: Colors.blueGrey),
           BottomNavigationBarItem(
               title: Text('Start'),
               icon: Icon(Icons.add),
