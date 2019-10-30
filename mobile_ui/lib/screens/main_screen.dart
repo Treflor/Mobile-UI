@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'camera_screen.dart';
 import 'home_screen.dart';
@@ -37,40 +38,21 @@ class _MainScreenState extends State<MainScreen> {
         type: BottomNavigationBarType.shifting,
         items: [
           BottomNavigationBarItem(
-              title: Text(
-                'Home',
-                style: TextStyle(color: Color.fromRGBO(130, 199, 165, 1)),
-              ),
-              icon: Icon(Icons.home, color: Color.fromRGBO(130, 199, 165, 1),),
-              backgroundColor: Color.fromRGBO(13, 71, 161, 0.6)),
+            title: Text('Home'),
+            icon: Icon(FontAwesomeIcons.home),
+          ),
           BottomNavigationBarItem(
-              title: Text(
-                'Start',
-                style: TextStyle(color: Color.fromRGBO(130, 199, 165, 1)),
-              ),
-              icon: Icon(Icons.add, color: Color.fromRGBO(130, 199, 165, 1),),
-              backgroundColor: Color.fromRGBO(13, 71, 161, 0.6)),
+            title: Text('Camera'),
+            icon: Icon(FontAwesomeIcons.camera),
+          ),
           BottomNavigationBarItem(
-              title: Text(
-                'Camera',
-                style: TextStyle(color: Color.fromRGBO(130, 199, 165, 1)),
-              ),
-              icon: Icon(Icons.camera, color: Color.fromRGBO(130, 199, 165, 1),),
-              backgroundColor: Color.fromRGBO(13, 71, 161, 0.6)),
+            title: Text('Routes'),
+            icon: Icon(FontAwesomeIcons.route),
+          ),
           BottomNavigationBarItem(
-              title: Text(
-                'Routes',
-                style: TextStyle(color: Color.fromRGBO(130, 199, 165, 1)),
-              ),
-              icon: Icon(Icons.navigation, color: Color.fromRGBO(130, 199, 165, 1),),
-              backgroundColor: Color.fromRGBO(13, 71, 161, 0.6)),
-          BottomNavigationBarItem(
-              title: Text(
-                'Settings',
-                style: TextStyle(color: Color.fromRGBO(130, 199, 165, 1)),
-              ),
-              icon: Icon(Icons.settings, color: Color.fromRGBO(130, 199, 165, 1),),
-              backgroundColor: Color.fromRGBO(13, 71, 161, 0.6)),
+            title: Text('Settings'),
+            icon: Icon(FontAwesomeIcons.cog),
+          ),
         ],
       ),
     );
