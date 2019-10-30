@@ -59,7 +59,13 @@ class CameraScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Upload Photos'),
+        title: Text(
+          'Upload Photos',
+          style: TextStyle(
+            color: Color.fromRGBO(130, 199, 165, 1)
+          ),
+        ),
+        backgroundColor: Color.fromRGBO(13, 71, 161, 0.6),
       ),
       body: Container(
         child: GridView.count(

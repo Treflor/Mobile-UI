@@ -14,16 +14,31 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Treflor'),
+        // title: Text(
+          // 'TREFLOR',
+          // style: TextStyle(color: Color.fromRGBO(130, 199, 165, 1)),
+        // ),
+        title: Image.asset("assets/treflor_logo.png", height: 50.0,),
+        backgroundColor: Color.fromRGBO(13, 71, 161, 0.6),
         actions: <Widget>[
-          IconButton(
-            onPressed: () => null,
-            icon: Icon(Icons.search),
+          // IconButton(
+            // onPressed: () => null,
+            // icon: Icon(Icons.search, color: Color.fromRGBO(130, 199, 165, 1),),
+          // ),
+          // IconButton(
+            // onPressed: () => null,
+            // icon: Icon(Icons.account_circle, size: 40.0, color: Color.fromRGBO(130, 199, 165, 1),),
+          // ),
+          CircleAvatar(
+            child: InkWell(
+              borderRadius: BorderRadius.circular(40),
+              child: ClipOval(
+                child: Image.asset("assets/profile.jpg"),
+              ),
+              onTap: () {},
+            ),
           ),
-          IconButton(
-            onPressed: () => null,
-            icon: Icon(Icons.account_circle),
-          ),
+          Padding(padding: EdgeInsets.only(left: 10.0),),
         ],
       ),
       body: Container(
